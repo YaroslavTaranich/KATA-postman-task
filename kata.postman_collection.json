@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "d081f229-d461-421b-82dc-46f448833d03",
+		"name": "kata",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21521530"
+	},
+	"item": [
+		{
+			"name": "registration",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"username\": \"olegoleg\",\r\n    \"email\": \"oleg@gmail.com\",\r\n    \"password\": \"olegolegoleg\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kata.academy:8021/api/users",
+					"protocol": "https",
+					"host": [
+						"kata",
+						"academy"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"users"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "registration",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"username\": \"olegoleg\",\r\n    \"email\": \"oleg@gmail.com\",\r\n    \"password\": \"olegolegoleg\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kata.academy:8021/api/users",
+							"protocol": "https",
+							"host": [
+								"kata",
+								"academy"
+							],
+							"port": "8021",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Jun 2022 08:02:34 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-sXLvYSFB19OazvrGDC5tGw\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"olegoleg\",\n        \"email\": \"oleg@gmail.com\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjAyOTlhNTJlNDk4MWIwMGNmMjc4NiIsInVzZXJuYW1lIjoib2xlZ29sZWciLCJleHAiOjE2NjA4OTYxNTQsImlhdCI6MTY1NTcxMjE1NH0.D7PXIh5m09_QmVTu20Fts4P4gD68s0hpTRy-fDWhXTk\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"oleg@gmail.com\",\r\n    \"password\": \"olegolegoleg\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://kata.academy:8021/api/users/login",
+					"protocol": "https",
+					"host": [
+						"kata",
+						"academy"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"oleg@gmail.com\",\r\n    \"password\": \"olegolegoleg\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://kata.academy:8021/api/users/login",
+							"protocol": "https",
+							"host": [
+								"kata",
+								"academy"
+							],
+							"port": "8021",
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Jun 2022 08:04:27 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-tRbQl1/9af4buqzRWUX31w\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"olegoleg\",\n        \"email\": \"oleg@gmail.com\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjAyOTlhNTJlNDk4MWIwMGNmMjc4NiIsInVzZXJuYW1lIjoib2xlZ29sZWciLCJleHAiOjE2NjA4OTYyNjcsImlhdCI6MTY1NTcxMjI2N30.ZMOFxg6hraTamqogkYmsoK8MtBNkZDnFXc5gMG6AjjI\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "current user info",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYWM4ZDEwNTJlNDk4MWIwMGNmMjc0NCIsInVzZXJuYW1lIjoicXF0YXkiLCJleHAiOjE2NjA2NTk2MjAsImlhdCI6MTY1NTQ3NTYyMH0.FcwVF_qWrKOAAckDIrtkrgLjzSTEZ8vF3oAMvx9uGs0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://kata.academy:8021/api/user",
+					"protocol": "https",
+					"host": [
+						"kata",
+						"academy"
+					],
+					"port": "8021",
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "current user info",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://kata.academy:8021/api/user",
+							"protocol": "https",
+							"host": [
+								"kata",
+								"academy"
+							],
+							"port": "8021",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 20 Jun 2022 08:05:01 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "268"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"10c-rHWl+qiY57Z90A/QkZcaZg\""
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"olegoleg\",\n        \"email\": \"oleg@gmail.com\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyYjAyOTlhNTJlNDk4MWIwMGNmMjc4NiIsInVzZXJuYW1lIjoib2xlZ29sZWciLCJleHAiOjE2NjA4OTYzMDEsImlhdCI6MTY1NTcxMjMwMX0.H7uuGrk2vmwouHwjbWRts-pCuRgRzidee9m-JhWqtio\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
